@@ -1,0 +1,3291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4011b3668076503d6866b04c7092833 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e4011b3668076503d6866b04c7092833" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e4011b3668076503d6866b04c7092833 = L.map(
+                "map_e4011b3668076503d6866b04c7092833",
+                {
+                    center: [55.86525761242339, -3.975652035752143],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_09c8ef1d8842cd54c021d20a7151c5b1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_09c8ef1d8842cd54c021d20a7151c5b1.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87 = L.geoJson(null, {
+                onEachFeature: geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_onEachFeature,
+            
+                style: geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_styler,
+            ...{
+}
+        });
+
+        function geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_add (data) {
+            geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87
+                .addData(data);
+        }
+            geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.9806898380695994, 55.86553189701106]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87.bindTooltip(
+                `<div>
+                     Broomknoll Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_a2a11174d461a64c61f5cb862883e573 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8747dbbbd881599d7fe1f248ad2d9e9a = $(`<div id="html_8747dbbbd881599d7fe1f248ad2d9e9a" style="width: 100.0%; height: 100.0%;"><b>Broomknoll Street</b> (East)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Graham Street southwards to the extended line of the north kerb Callon Street a distance of 46 metres or thereby.</i></div>`)[0];
+                popup_a2a11174d461a64c61f5cb862883e573.setContent(html_8747dbbbd881599d7fe1f248ad2d9e9a);
+            
+        
+
+        geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87.bindPopup(popup_a2a11174d461a64c61f5cb862883e573)
+        ;
+
+        
+    
+    
+            geo_json_4d1a46e3db72c17a1a1a1b6a453f5d87.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_a24716d9a411cea2e3a69e27197f8e02_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_a24716d9a411cea2e3a69e27197f8e02_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a24716d9a411cea2e3a69e27197f8e02 = L.geoJson(null, {
+                onEachFeature: geo_json_a24716d9a411cea2e3a69e27197f8e02_onEachFeature,
+            
+                style: geo_json_a24716d9a411cea2e3a69e27197f8e02_styler,
+            ...{
+}
+        });
+
+        function geo_json_a24716d9a411cea2e3a69e27197f8e02_add (data) {
+            geo_json_a24716d9a411cea2e3a69e27197f8e02
+                .addData(data);
+        }
+            geo_json_a24716d9a411cea2e3a69e27197f8e02_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.980697479541415, 55.86557886008058]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a24716d9a411cea2e3a69e27197f8e02.bindTooltip(
+                `<div>
+                     Broomknoll Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_984645718921ce114ea9c4c95cb9c9b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2572454c705402c323be371af629cf5e = $(`<div id="html_2572454c705402c323be371af629cf5e" style="width: 100.0%; height: 100.0%;"><b>Broomknoll Street</b> (West)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Stirling Street southwards for a distance of 52 metres or thereby.</i></div>`)[0];
+                popup_984645718921ce114ea9c4c95cb9c9b0.setContent(html_2572454c705402c323be371af629cf5e);
+            
+        
+
+        geo_json_a24716d9a411cea2e3a69e27197f8e02.bindPopup(popup_984645718921ce114ea9c4c95cb9c9b0)
+        ;
+
+        
+    
+    
+            geo_json_a24716d9a411cea2e3a69e27197f8e02.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_29db40707ea9e7b3c20a41b1eef48272_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_29db40707ea9e7b3c20a41b1eef48272_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_29db40707ea9e7b3c20a41b1eef48272 = L.geoJson(null, {
+                onEachFeature: geo_json_29db40707ea9e7b3c20a41b1eef48272_onEachFeature,
+            
+                style: geo_json_29db40707ea9e7b3c20a41b1eef48272_styler,
+            ...{
+}
+        });
+
+        function geo_json_29db40707ea9e7b3c20a41b1eef48272_add (data) {
+            geo_json_29db40707ea9e7b3c20a41b1eef48272
+                .addData(data);
+        }
+            geo_json_29db40707ea9e7b3c20a41b1eef48272_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.9634674567976496, 55.86655818333236]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_29db40707ea9e7b3c20a41b1eef48272.bindTooltip(
+                `<div>
+                     Carlisle Road — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_2dd89595259123c8ac691f7d955d495e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5454ae70f0d93c2b92237b44d964807d = $(`<div id="html_5454ae70f0d93c2b92237b44d964807d" style="width: 100.0%; height: 100.0%;"><b>Carlisle Road</b> (West)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Clark Street southwards for a distance of 60 metres or thereby.</i></div>`)[0];
+                popup_2dd89595259123c8ac691f7d955d495e.setContent(html_5454ae70f0d93c2b92237b44d964807d);
+            
+        
+
+        geo_json_29db40707ea9e7b3c20a41b1eef48272.bindPopup(popup_2dd89595259123c8ac691f7d955d495e)
+        ;
+
+        
+    
+    
+            geo_json_29db40707ea9e7b3c20a41b1eef48272.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_611b8278c3a8887497bde5af141ffd09_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_611b8278c3a8887497bde5af141ffd09_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_611b8278c3a8887497bde5af141ffd09 = L.geoJson(null, {
+                onEachFeature: geo_json_611b8278c3a8887497bde5af141ffd09_onEachFeature,
+            
+                style: geo_json_611b8278c3a8887497bde5af141ffd09_styler,
+            ...{
+}
+        });
+
+        function geo_json_611b8278c3a8887497bde5af141ffd09_add (data) {
+            geo_json_611b8278c3a8887497bde5af141ffd09
+                .addData(data);
+        }
+            geo_json_611b8278c3a8887497bde5af141ffd09_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.963438080021271, 55.86673708648819]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_611b8278c3a8887497bde5af141ffd09.bindTooltip(
+                `<div>
+                     Carlisle Road — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_c6dbb4d0e51418f7d14285f396012da0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d19c629b7d4aaa9381385b14cb9367a = $(`<div id="html_6d19c629b7d4aaa9381385b14cb9367a" style="width: 100.0%; height: 100.0%;"><b>Carlisle Road</b> (East)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Forrest Street southwards for a distance of 40 metres or thereby.</i></div>`)[0];
+                popup_c6dbb4d0e51418f7d14285f396012da0.setContent(html_6d19c629b7d4aaa9381385b14cb9367a);
+            
+        
+
+        geo_json_611b8278c3a8887497bde5af141ffd09.bindPopup(popup_c6dbb4d0e51418f7d14285f396012da0)
+        ;
+
+        
+    
+    
+            geo_json_611b8278c3a8887497bde5af141ffd09.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_a248df730fdb973bbc0cd0574e0ada34_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_a248df730fdb973bbc0cd0574e0ada34_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a248df730fdb973bbc0cd0574e0ada34 = L.geoJson(null, {
+                onEachFeature: geo_json_a248df730fdb973bbc0cd0574e0ada34_onEachFeature,
+            
+                style: geo_json_a248df730fdb973bbc0cd0574e0ada34_styler,
+            ...{
+}
+        });
+
+        function geo_json_a248df730fdb973bbc0cd0574e0ada34_add (data) {
+            geo_json_a248df730fdb973bbc0cd0574e0ada34
+                .addData(data);
+        }
+            geo_json_a248df730fdb973bbc0cd0574e0ada34_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.9679223600352986, 55.86682454580823]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a248df730fdb973bbc0cd0574e0ada34.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d65eceaf55c75279b38d55a2f03a96cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1748c3bc06df22e34e1c0e7a9369d6dd = $(`<div id="html_1748c3bc06df22e34e1c0e7a9369d6dd" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of North Biggar Road eastwards for a distance of 30 metres or thereby.</i></div>`)[0];
+                popup_d65eceaf55c75279b38d55a2f03a96cc.setContent(html_1748c3bc06df22e34e1c0e7a9369d6dd);
+            
+        
+
+        geo_json_a248df730fdb973bbc0cd0574e0ada34.bindPopup(popup_d65eceaf55c75279b38d55a2f03a96cc)
+        ;
+
+        
+    
+    
+            geo_json_a248df730fdb973bbc0cd0574e0ada34.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_b1b7788060d23a878bf9dc5554a755d6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_b1b7788060d23a878bf9dc5554a755d6_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_b1b7788060d23a878bf9dc5554a755d6 = L.geoJson(null, {
+                onEachFeature: geo_json_b1b7788060d23a878bf9dc5554a755d6_onEachFeature,
+            
+                style: geo_json_b1b7788060d23a878bf9dc5554a755d6_styler,
+            ...{
+}
+        });
+
+        function geo_json_b1b7788060d23a878bf9dc5554a755d6_add (data) {
+            geo_json_b1b7788060d23a878bf9dc5554a755d6
+                .addData(data);
+        }
+            geo_json_b1b7788060d23a878bf9dc5554a755d6_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.968638928938181, 55.866793124736844]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b1b7788060d23a878bf9dc5554a755d6.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_76b4359a5389089dbee61c8ba0d1d593 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56e7d0f76873ace4f624ae46adbfe021 = $(`<div id="html_56e7d0f76873ace4f624ae46adbfe021" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the western kerb of North Biggar Road westwards for a distance of 15 metres or thereby.</i></div>`)[0];
+                popup_76b4359a5389089dbee61c8ba0d1d593.setContent(html_56e7d0f76873ace4f624ae46adbfe021);
+            
+        
+
+        geo_json_b1b7788060d23a878bf9dc5554a755d6.bindPopup(popup_76b4359a5389089dbee61c8ba0d1d593)
+        ;
+
+        
+    
+    
+            geo_json_b1b7788060d23a878bf9dc5554a755d6.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_c651ace98d10111cb15485361869259d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_c651ace98d10111cb15485361869259d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c651ace98d10111cb15485361869259d = L.geoJson(null, {
+                onEachFeature: geo_json_c651ace98d10111cb15485361869259d_onEachFeature,
+            
+                style: geo_json_c651ace98d10111cb15485361869259d_styler,
+            ...{
+}
+        });
+
+        function geo_json_c651ace98d10111cb15485361869259d_add (data) {
+            geo_json_c651ace98d10111cb15485361869259d
+                .addData(data);
+        }
+            geo_json_c651ace98d10111cb15485361869259d_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.964751453956601, 55.86701865091809]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c651ace98d10111cb15485361869259d.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_206b4e877209a3b4f70d751bcaa91437 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d3add3d86ff8187de59293ee6b09d8d = $(`<div id="html_1d3add3d86ff8187de59293ee6b09d8d" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the western kerb of the A73 Motherwell Street westwards to the extended line of the eastern kerb of Springwells Crescent a distance of 78 metres or thereby.</i></div>`)[0];
+                popup_206b4e877209a3b4f70d751bcaa91437.setContent(html_1d3add3d86ff8187de59293ee6b09d8d);
+            
+        
+
+        geo_json_c651ace98d10111cb15485361869259d.bindPopup(popup_206b4e877209a3b4f70d751bcaa91437)
+        ;
+
+        
+    
+    
+            geo_json_c651ace98d10111cb15485361869259d.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_e73bf32bbe482263277e508ee807fb16_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_e73bf32bbe482263277e508ee807fb16_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_e73bf32bbe482263277e508ee807fb16 = L.geoJson(null, {
+                onEachFeature: geo_json_e73bf32bbe482263277e508ee807fb16_onEachFeature,
+            
+                style: geo_json_e73bf32bbe482263277e508ee807fb16_styler,
+            ...{
+}
+        });
+
+        function geo_json_e73bf32bbe482263277e508ee807fb16_add (data) {
+            geo_json_e73bf32bbe482263277e508ee807fb16
+                .addData(data);
+        }
+            geo_json_e73bf32bbe482263277e508ee807fb16_add({"features": [{"geometry": {"coordinates": [[-3.9696115942369428, 55.86673424583657], [-3.96951629183061, 55.866740015178344]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_e73bf32bbe482263277e508ee807fb16.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d41e52cae147163a788e969262a15f97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4f92ecfe5eedaefb8518ea6bc796469 = $(`<div id="html_e4f92ecfe5eedaefb8518ea6bc796469" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of Albert Place eastwards for a distance of 6 metres or thereby.</i></div>`)[0];
+                popup_d41e52cae147163a788e969262a15f97.setContent(html_e4f92ecfe5eedaefb8518ea6bc796469);
+            
+        
+
+        geo_json_e73bf32bbe482263277e508ee807fb16.bindPopup(popup_d41e52cae147163a788e969262a15f97)
+        ;
+
+        
+    
+    
+            geo_json_e73bf32bbe482263277e508ee807fb16.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_3ff742b1bf9ef8de86243e5220770fff_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_3ff742b1bf9ef8de86243e5220770fff_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3ff742b1bf9ef8de86243e5220770fff = L.geoJson(null, {
+                onEachFeature: geo_json_3ff742b1bf9ef8de86243e5220770fff_onEachFeature,
+            
+                style: geo_json_3ff742b1bf9ef8de86243e5220770fff_styler,
+            ...{
+}
+        });
+
+        function geo_json_3ff742b1bf9ef8de86243e5220770fff_add (data) {
+            geo_json_3ff742b1bf9ef8de86243e5220770fff
+                .addData(data);
+        }
+            geo_json_3ff742b1bf9ef8de86243e5220770fff_add({"features": [{"geometry": {"coordinates": [[-3.9696115942369428, 55.86673424583657], [-3.969706953857098, 55.866723732385786], [-3.9697387730194804, 55.866722101808904]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3ff742b1bf9ef8de86243e5220770fff.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_015568e97f5887e6628bf90c09fcdee6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef2d9755c6ca53c8c87f17acfa3da63b = $(`<div id="html_ef2d9755c6ca53c8c87f17acfa3da63b" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the western kerb of Albert Place westwards for a distance of 8 metres or thereby.</i></div>`)[0];
+                popup_015568e97f5887e6628bf90c09fcdee6.setContent(html_ef2d9755c6ca53c8c87f17acfa3da63b);
+            
+        
+
+        geo_json_3ff742b1bf9ef8de86243e5220770fff.bindPopup(popup_015568e97f5887e6628bf90c09fcdee6)
+        ;
+
+        
+    
+    
+            geo_json_3ff742b1bf9ef8de86243e5220770fff.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_6a0134b07aa1d98389adc0fd886c9fbf_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_6a0134b07aa1d98389adc0fd886c9fbf_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_6a0134b07aa1d98389adc0fd886c9fbf = L.geoJson(null, {
+                onEachFeature: geo_json_6a0134b07aa1d98389adc0fd886c9fbf_onEachFeature,
+            
+                style: geo_json_6a0134b07aa1d98389adc0fd886c9fbf_styler,
+            ...{
+}
+        });
+
+        function geo_json_6a0134b07aa1d98389adc0fd886c9fbf_add (data) {
+            geo_json_6a0134b07aa1d98389adc0fd886c9fbf
+                .addData(data);
+        }
+            geo_json_6a0134b07aa1d98389adc0fd886c9fbf_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.9676200916694637, 55.86684825056936], [-3.9675082193723945, 55.86685776830134], [-3.967126925182249, 55.866880407376726]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_6a0134b07aa1d98389adc0fd886c9fbf.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_7a52f0093ff1afb03afec6d67c2023f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5391390e50322fd8429153065b230cd4 = $(`<div id="html_5391390e50322fd8429153065b230cd4" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of South Biggar Road eastwards for a distance of 80 metres or thereby.</i></div>`)[0];
+                popup_7a52f0093ff1afb03afec6d67c2023f6.setContent(html_5391390e50322fd8429153065b230cd4);
+            
+        
+
+        geo_json_6a0134b07aa1d98389adc0fd886c9fbf.bindPopup(popup_7a52f0093ff1afb03afec6d67c2023f6)
+        ;
+
+        
+    
+    
+            geo_json_6a0134b07aa1d98389adc0fd886c9fbf.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_5280e79c54866b1f9223fed2d91a0b0b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_5280e79c54866b1f9223fed2d91a0b0b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5280e79c54866b1f9223fed2d91a0b0b = L.geoJson(null, {
+                onEachFeature: geo_json_5280e79c54866b1f9223fed2d91a0b0b_onEachFeature,
+            
+                style: geo_json_5280e79c54866b1f9223fed2d91a0b0b_styler,
+            ...{
+}
+        });
+
+        function geo_json_5280e79c54866b1f9223fed2d91a0b0b_add (data) {
+            geo_json_5280e79c54866b1f9223fed2d91a0b0b
+                .addData(data);
+        }
+            geo_json_5280e79c54866b1f9223fed2d91a0b0b_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.9686706965022256, 55.866791201856984]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_5280e79c54866b1f9223fed2d91a0b0b.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d45cf2ca21d1b82098f491ece7a408e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c37db89c74de2672dda6ef8c02574fdc = $(`<div id="html_c37db89c74de2672dda6ef8c02574fdc" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the western kerb of South Biggar Road westwards for a distance of 17 metres or thereby.</i></div>`)[0];
+                popup_d45cf2ca21d1b82098f491ece7a408e6.setContent(html_c37db89c74de2672dda6ef8c02574fdc);
+            
+        
+
+        geo_json_5280e79c54866b1f9223fed2d91a0b0b.bindPopup(popup_d45cf2ca21d1b82098f491ece7a408e6)
+        ;
+
+        
+    
+    
+            geo_json_5280e79c54866b1f9223fed2d91a0b0b.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_bc06a5bdeb584782e4967144cb03a5cf_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_bc06a5bdeb584782e4967144cb03a5cf_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_bc06a5bdeb584782e4967144cb03a5cf = L.geoJson(null, {
+                onEachFeature: geo_json_bc06a5bdeb584782e4967144cb03a5cf_onEachFeature,
+            
+                style: geo_json_bc06a5bdeb584782e4967144cb03a5cf_styler,
+            ...{
+}
+        });
+
+        function geo_json_bc06a5bdeb584782e4967144cb03a5cf_add (data) {
+            geo_json_bc06a5bdeb584782e4967144cb03a5cf
+                .addData(data);
+        }
+            geo_json_bc06a5bdeb584782e4967144cb03a5cf_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.9638224737216574, 55.86706993372398]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_bc06a5bdeb584782e4967144cb03a5cf.bindTooltip(
+                `<div>
+                     Clark Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_efffba12f4719950ccf5cde59fc51556 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_338dea52981236e5088dd564fc8b5086 = $(`<div id="html_338dea52981236e5088dd564fc8b5086" style="width: 100.0%; height: 100.0%;"><b>Clark Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the western kerb of the A73 Carlisle Road westwards for a distance of 27 metres or thereby.</i></div>`)[0];
+                popup_efffba12f4719950ccf5cde59fc51556.setContent(html_338dea52981236e5088dd564fc8b5086);
+            
+        
+
+        geo_json_bc06a5bdeb584782e4967144cb03a5cf.bindPopup(popup_efffba12f4719950ccf5cde59fc51556)
+        ;
+
+        
+    
+    
+            geo_json_bc06a5bdeb584782e4967144cb03a5cf.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_aae3dd4603cff6f49e3d04b233231720_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_aae3dd4603cff6f49e3d04b233231720_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_aae3dd4603cff6f49e3d04b233231720 = L.geoJson(null, {
+                onEachFeature: geo_json_aae3dd4603cff6f49e3d04b233231720_onEachFeature,
+            
+                style: geo_json_aae3dd4603cff6f49e3d04b233231720_styler,
+            ...{
+}
+        });
+
+        function geo_json_aae3dd4603cff6f49e3d04b233231720_add (data) {
+            geo_json_aae3dd4603cff6f49e3d04b233231720
+                .addData(data);
+        }
+            geo_json_aae3dd4603cff6f49e3d04b233231720_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.9626140906402, 55.867135916174895]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_aae3dd4603cff6f49e3d04b233231720.bindTooltip(
+                `<div>
+                     Forrest Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_ad9f7ffde4448cbde29c50686ffe4f5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ff2fdc2d509cbe4300b0625eda99050 = $(`<div id="html_1ff2fdc2d509cbe4300b0625eda99050" style="width: 100.0%; height: 100.0%;"><b>Forrest Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of Motherwell Street eastwards for a distance of 49 metres or thereby.</i></div>`)[0];
+                popup_ad9f7ffde4448cbde29c50686ffe4f5a.setContent(html_1ff2fdc2d509cbe4300b0625eda99050);
+            
+        
+
+        geo_json_aae3dd4603cff6f49e3d04b233231720.bindPopup(popup_ad9f7ffde4448cbde29c50686ffe4f5a)
+        ;
+
+        
+    
+    
+            geo_json_aae3dd4603cff6f49e3d04b233231720.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_caaca1c7752cf7556803dea39d05b09f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_caaca1c7752cf7556803dea39d05b09f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_caaca1c7752cf7556803dea39d05b09f = L.geoJson(null, {
+                onEachFeature: geo_json_caaca1c7752cf7556803dea39d05b09f_onEachFeature,
+            
+                style: geo_json_caaca1c7752cf7556803dea39d05b09f_styler,
+            ...{
+}
+        });
+
+        function geo_json_caaca1c7752cf7556803dea39d05b09f_add (data) {
+            geo_json_caaca1c7752cf7556803dea39d05b09f
+                .addData(data);
+        }
+            geo_json_caaca1c7752cf7556803dea39d05b09f_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.962582258006481, 55.867137463862406]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_caaca1c7752cf7556803dea39d05b09f.bindTooltip(
+                `<div>
+                     Forrest Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e19500655ea02b70e71463b47fec3fe9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2b1a751282d7aef650498c78b487fec = $(`<div id="html_e2b1a751282d7aef650498c78b487fec" style="width: 100.0%; height: 100.0%;"><b>Forrest Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of Carlisle Road eastwards for a distance of 51 metres or thereby.</i></div>`)[0];
+                popup_e19500655ea02b70e71463b47fec3fe9.setContent(html_e2b1a751282d7aef650498c78b487fec);
+            
+        
+
+        geo_json_caaca1c7752cf7556803dea39d05b09f.bindPopup(popup_e19500655ea02b70e71463b47fec3fe9)
+        ;
+
+        
+    
+    
+            geo_json_caaca1c7752cf7556803dea39d05b09f.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_cc8442094fb795192366dbd2701c6f59_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_cc8442094fb795192366dbd2701c6f59_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_cc8442094fb795192366dbd2701c6f59 = L.geoJson(null, {
+                onEachFeature: geo_json_cc8442094fb795192366dbd2701c6f59_onEachFeature,
+            
+                style: geo_json_cc8442094fb795192366dbd2701c6f59_styler,
+            ...{
+}
+        });
+
+        function geo_json_cc8442094fb795192366dbd2701c6f59_add (data) {
+            geo_json_cc8442094fb795192366dbd2701c6f59
+                .addData(data);
+        }
+            geo_json_cc8442094fb795192366dbd2701c6f59_add({"features": [{"geometry": {"coordinates": [[-3.984556994955413, 55.8680308360643], [-3.9826831752451244, 55.8685822842483]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_cc8442094fb795192366dbd2701c6f59.bindTooltip(
+                `<div>
+                     High Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_c3735c56fb2d4c4c26be956f9c5dec64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3487e0e23b3da4dec61fe1bcaf7ebb8d = $(`<div id="html_3487e0e23b3da4dec61fe1bcaf7ebb8d" style="width: 100.0%; height: 100.0%;"><b>High Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the eastern kerb of Wellwynd eastwards to the extended line of the western kerb of South Bridge Street for a distance of 122 metres or thereby.</i></div>`)[0];
+                popup_c3735c56fb2d4c4c26be956f9c5dec64.setContent(html_3487e0e23b3da4dec61fe1bcaf7ebb8d);
+            
+        
+
+        geo_json_cc8442094fb795192366dbd2701c6f59.bindPopup(popup_c3735c56fb2d4c4c26be956f9c5dec64)
+        ;
+
+        
+    
+    
+            geo_json_cc8442094fb795192366dbd2701c6f59.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_f6a4c72b14c6c5362953f827ac2d6a14_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_f6a4c72b14c6c5362953f827ac2d6a14_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_f6a4c72b14c6c5362953f827ac2d6a14 = L.geoJson(null, {
+                onEachFeature: geo_json_f6a4c72b14c6c5362953f827ac2d6a14_onEachFeature,
+            
+                style: geo_json_f6a4c72b14c6c5362953f827ac2d6a14_styler,
+            ...{
+}
+        });
+
+        function geo_json_f6a4c72b14c6c5362953f827ac2d6a14_add (data) {
+            geo_json_f6a4c72b14c6c5362953f827ac2d6a14
+                .addData(data);
+        }
+            geo_json_f6a4c72b14c6c5362953f827ac2d6a14_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.9630913863143595, 55.86772568784426]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_f6a4c72b14c6c5362953f827ac2d6a14.bindTooltip(
+                `<div>
+                     Motherwell Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_842496b75e7c9cc910d8e30110894f10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_baec41992a39cc96e950c3d384f3b804 = $(`<div id="html_baec41992a39cc96e950c3d384f3b804" style="width: 100.0%; height: 100.0%;"><b>Motherwell Street</b> (West)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Clark Street northwards for a distance of 73 metres or thereby.</i></div>`)[0];
+                popup_842496b75e7c9cc910d8e30110894f10.setContent(html_baec41992a39cc96e950c3d384f3b804);
+            
+        
+
+        geo_json_f6a4c72b14c6c5362953f827ac2d6a14.bindPopup(popup_842496b75e7c9cc910d8e30110894f10)
+        ;
+
+        
+    
+    
+            geo_json_f6a4c72b14c6c5362953f827ac2d6a14.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_796089c5a7e1347f482ab5e9d9ce4486_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_796089c5a7e1347f482ab5e9d9ce4486_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_796089c5a7e1347f482ab5e9d9ce4486 = L.geoJson(null, {
+                onEachFeature: geo_json_796089c5a7e1347f482ab5e9d9ce4486_onEachFeature,
+            
+                style: geo_json_796089c5a7e1347f482ab5e9d9ce4486_styler,
+            ...{
+}
+        });
+
+        function geo_json_796089c5a7e1347f482ab5e9d9ce4486_add (data) {
+            geo_json_796089c5a7e1347f482ab5e9d9ce4486
+                .addData(data);
+        }
+            geo_json_796089c5a7e1347f482ab5e9d9ce4486_add({"features": [{"geometry": {"coordinates": [[-3.9633934857591515, 55.867095238348874], [-3.96312599697114, 55.867665892735964]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_796089c5a7e1347f482ab5e9d9ce4486.bindTooltip(
+                `<div>
+                     Motherwell Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_4e4e19f0c77641aba8f21837b0f97b43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22459f45764e9a3d8a2132827a0b43ee = $(`<div id="html_22459f45764e9a3d8a2132827a0b43ee" style="width: 100.0%; height: 100.0%;"><b>Motherwell Street</b> (East)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Forrest Street northwards for a distance of 66 metres or thereby.</i></div>`)[0];
+                popup_4e4e19f0c77641aba8f21837b0f97b43.setContent(html_22459f45764e9a3d8a2132827a0b43ee);
+            
+        
+
+        geo_json_796089c5a7e1347f482ab5e9d9ce4486.bindPopup(popup_4e4e19f0c77641aba8f21837b0f97b43)
+        ;
+
+        
+    
+    
+            geo_json_796089c5a7e1347f482ab5e9d9ce4486.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_ea88d290b4469e2e5f630bb549462a31_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_ea88d290b4469e2e5f630bb549462a31_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ea88d290b4469e2e5f630bb549462a31 = L.geoJson(null, {
+                onEachFeature: geo_json_ea88d290b4469e2e5f630bb549462a31_onEachFeature,
+            
+                style: geo_json_ea88d290b4469e2e5f630bb549462a31_styler,
+            ...{
+}
+        });
+
+        function geo_json_ea88d290b4469e2e5f630bb549462a31_add (data) {
+            geo_json_ea88d290b4469e2e5f630bb549462a31
+                .addData(data);
+        }
+            geo_json_ea88d290b4469e2e5f630bb549462a31_add({"features": [{"geometry": {"coordinates": [[-3.9826831752451244, 55.8685822842483], [-3.982819171403916, 55.86874185616791], [-3.982999218569976, 55.86892196726493]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_ea88d290b4469e2e5f630bb549462a31.bindTooltip(
+                `<div>
+                     North Bridge Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_849057251bc80f017c8fd50275701a38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e03a53046d868735b238524edca9eb33 = $(`<div id="html_e03a53046d868735b238524edca9eb33" style="width: 100.0%; height: 100.0%;"><b>North Bridge Street</b> (Both)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of High Street northwards for a distance of 43 metres or thereby.</i></div>`)[0];
+                popup_849057251bc80f017c8fd50275701a38.setContent(html_e03a53046d868735b238524edca9eb33);
+            
+        
+
+        geo_json_ea88d290b4469e2e5f630bb549462a31.bindPopup(popup_849057251bc80f017c8fd50275701a38)
+        ;
+
+        
+    
+    
+            geo_json_ea88d290b4469e2e5f630bb549462a31.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_a9917273d36a8c6958f151d6441b4d46_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_a9917273d36a8c6958f151d6441b4d46_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a9917273d36a8c6958f151d6441b4d46 = L.geoJson(null, {
+                onEachFeature: geo_json_a9917273d36a8c6958f151d6441b4d46_onEachFeature,
+            
+                style: geo_json_a9917273d36a8c6958f151d6441b4d46_styler,
+            ...{
+}
+        });
+
+        function geo_json_a9917273d36a8c6958f151d6441b4d46_add (data) {
+            geo_json_a9917273d36a8c6958f151d6441b4d46
+                .addData(data);
+        }
+            geo_json_a9917273d36a8c6958f151d6441b4d46_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.968199370534111, 55.866243874593366]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a9917273d36a8c6958f151d6441b4d46.bindTooltip(
+                `<div>
+                     South Biggar Road — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d31aa9a6dedc567878290cd33354560e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b610a42c79b7d3d3680161b806d077f9 = $(`<div id="html_b610a42c79b7d3d3680161b806d077f9" style="width: 100.0%; height: 100.0%;"><b>South Biggar Road</b> (West)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Clark Street southwards for a distance of 64 metres or thereby.</i></div>`)[0];
+                popup_d31aa9a6dedc567878290cd33354560e.setContent(html_b610a42c79b7d3d3680161b806d077f9);
+            
+        
+
+        geo_json_a9917273d36a8c6958f151d6441b4d46.bindPopup(popup_d31aa9a6dedc567878290cd33354560e)
+        ;
+
+        
+    
+    
+            geo_json_a9917273d36a8c6958f151d6441b4d46.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_91801bb92adccfe14d6b3adf62f28635_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_91801bb92adccfe14d6b3adf62f28635_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_91801bb92adccfe14d6b3adf62f28635 = L.geoJson(null, {
+                onEachFeature: geo_json_91801bb92adccfe14d6b3adf62f28635_onEachFeature,
+            
+                style: geo_json_91801bb92adccfe14d6b3adf62f28635_styler,
+            ...{
+}
+        });
+
+        function geo_json_91801bb92adccfe14d6b3adf62f28635_add (data) {
+            geo_json_91801bb92adccfe14d6b3adf62f28635
+                .addData(data);
+        }
+            geo_json_91801bb92adccfe14d6b3adf62f28635_add({"features": [{"geometry": {"coordinates": [[-3.9684006721017546, 55.866807546075194], [-3.968205654844713, 55.86626149004153]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_91801bb92adccfe14d6b3adf62f28635.bindTooltip(
+                `<div>
+                     South Biggar Road — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_649fd372c83c0c008f0c91b48ce24d28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61d453335becd51d9abe429cc865cc9c = $(`<div id="html_61d453335becd51d9abe429cc865cc9c" style="width: 100.0%; height: 100.0%;"><b>South Biggar Road</b> (East)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Clark Street southwards for a distance of 62 metres or thereby.</i></div>`)[0];
+                popup_649fd372c83c0c008f0c91b48ce24d28.setContent(html_61d453335becd51d9abe429cc865cc9c);
+            
+        
+
+        geo_json_91801bb92adccfe14d6b3adf62f28635.bindPopup(popup_649fd372c83c0c008f0c91b48ce24d28)
+        ;
+
+        
+    
+    
+            geo_json_91801bb92adccfe14d6b3adf62f28635.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_aeffbda8051182c9649ba6a302bb58a6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_aeffbda8051182c9649ba6a302bb58a6_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_aeffbda8051182c9649ba6a302bb58a6 = L.geoJson(null, {
+                onEachFeature: geo_json_aeffbda8051182c9649ba6a302bb58a6_onEachFeature,
+            
+                style: geo_json_aeffbda8051182c9649ba6a302bb58a6_styler,
+            ...{
+}
+        });
+
+        function geo_json_aeffbda8051182c9649ba6a302bb58a6_add (data) {
+            geo_json_aeffbda8051182c9649ba6a302bb58a6
+                .addData(data);
+        }
+            geo_json_aeffbda8051182c9649ba6a302bb58a6_add({"features": [{"geometry": {"coordinates": [[-3.982721163957154, 55.865912753453536], [-3.980795740103471, 55.866042443136266]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_aeffbda8051182c9649ba6a302bb58a6.bindTooltip(
+                `<div>
+                     Stirling Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_6c95342ce63aed43a9158ae8c72b3dca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e593a6bf27672887317eb8f517659b6 = $(`<div id="html_5e593a6bf27672887317eb8f517659b6" style="width: 100.0%; height: 100.0%;"><b>Stirling Street</b> (North)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the east kerb of Wellwynd eastwards to the extended line of the west kerb of Bank Street a distance of 111 metres or thereby.</i></div>`)[0];
+                popup_6c95342ce63aed43a9158ae8c72b3dca.setContent(html_5e593a6bf27672887317eb8f517659b6);
+            
+        
+
+        geo_json_aeffbda8051182c9649ba6a302bb58a6.bindPopup(popup_6c95342ce63aed43a9158ae8c72b3dca)
+        ;
+
+        
+    
+    
+            geo_json_aeffbda8051182c9649ba6a302bb58a6.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_5a3ad982f3118f6cd9cc877548620cc8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#e6194B", "weight": 4};
+            }
+        }
+
+        function geo_json_5a3ad982f3118f6cd9cc877548620cc8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5a3ad982f3118f6cd9cc877548620cc8 = L.geoJson(null, {
+                onEachFeature: geo_json_5a3ad982f3118f6cd9cc877548620cc8_onEachFeature,
+            
+                style: geo_json_5a3ad982f3118f6cd9cc877548620cc8_styler,
+            ...{
+}
+        });
+
+        function geo_json_5a3ad982f3118f6cd9cc877548620cc8_add (data) {
+            geo_json_5a3ad982f3118f6cd9cc877548620cc8
+                .addData(data);
+        }
+            geo_json_5a3ad982f3118f6cd9cc877548620cc8_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.982721163957154, 55.865912753453536]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_5a3ad982f3118f6cd9cc877548620cc8.bindTooltip(
+                `<div>
+                     Stirling Street — Schedule I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e15672209ccc8724d42ec68db61093b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6dc63221a5e73da947ca22326018c0f7 = $(`<div id="html_6dc63221a5e73da947ca22326018c0f7" style="width: 100.0%; height: 100.0%;"><b>Stirling Street</b> (South)<br>Schedule I<br>SCHEDULE I NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the west kerb of Broomknoll Street westwards for a distance of 121 metres.</i></div>`)[0];
+                popup_e15672209ccc8724d42ec68db61093b9.setContent(html_6dc63221a5e73da947ca22326018c0f7);
+            
+        
+
+        geo_json_5a3ad982f3118f6cd9cc877548620cc8.bindPopup(popup_e15672209ccc8724d42ec68db61093b9)
+        ;
+
+        
+    
+    
+            geo_json_5a3ad982f3118f6cd9cc877548620cc8.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_294cf7bf6e858f0cc7c57625cce4bffa_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_294cf7bf6e858f0cc7c57625cce4bffa_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_294cf7bf6e858f0cc7c57625cce4bffa = L.geoJson(null, {
+                onEachFeature: geo_json_294cf7bf6e858f0cc7c57625cce4bffa_onEachFeature,
+            
+                style: geo_json_294cf7bf6e858f0cc7c57625cce4bffa_styler,
+            ...{
+}
+        });
+
+        function geo_json_294cf7bf6e858f0cc7c57625cce4bffa_add (data) {
+            geo_json_294cf7bf6e858f0cc7c57625cce4bffa
+                .addData(data);
+        }
+            geo_json_294cf7bf6e858f0cc7c57625cce4bffa_add({"features": [{"geometry": {"coordinates": [[-3.9829215005716074, 55.866673228549736], [-3.9809788517220936, 55.866876531153544]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_294cf7bf6e858f0cc7c57625cce4bffa.bindTooltip(
+                `<div>
+                     Anderson Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_f9dcb68b3d7852eb35f83ccc652dbed9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fd61f2b87cab5a94e7837d39d8f19a7 = $(`<div id="html_7fd61f2b87cab5a94e7837d39d8f19a7" style="width: 100.0%; height: 100.0%;"><b>Anderson Street</b> (North)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the east kerb of Wellwynd eastwards to the extended line of the west kerb of Bank Street a distance of 123 metres or thereby.</i></div>`)[0];
+                popup_f9dcb68b3d7852eb35f83ccc652dbed9.setContent(html_7fd61f2b87cab5a94e7837d39d8f19a7);
+            
+        
+
+        geo_json_294cf7bf6e858f0cc7c57625cce4bffa.bindPopup(popup_f9dcb68b3d7852eb35f83ccc652dbed9)
+        ;
+
+        
+    
+    
+            geo_json_294cf7bf6e858f0cc7c57625cce4bffa.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_bf633df4c5ed6a7b8c075330b87be4b7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_bf633df4c5ed6a7b8c075330b87be4b7_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_bf633df4c5ed6a7b8c075330b87be4b7 = L.geoJson(null, {
+                onEachFeature: geo_json_bf633df4c5ed6a7b8c075330b87be4b7_onEachFeature,
+            
+                style: geo_json_bf633df4c5ed6a7b8c075330b87be4b7_styler,
+            ...{
+}
+        });
+
+        function geo_json_bf633df4c5ed6a7b8c075330b87be4b7_add (data) {
+            geo_json_bf633df4c5ed6a7b8c075330b87be4b7
+                .addData(data);
+        }
+            geo_json_bf633df4c5ed6a7b8c075330b87be4b7_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.9809788517220936, 55.866876531153544], [-3.980981686951164, 55.86705775047]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_bf633df4c5ed6a7b8c075330b87be4b7.bindTooltip(
+                `<div>
+                     Bank Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e55c67f4377ecdc8816c61021a4cea48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc7252722992e4bf9cb96e73b7d5a43a = $(`<div id="html_bc7252722992e4bf9cb96e73b7d5a43a" style="width: 100.0%; height: 100.0%;"><b>Bank Street</b> (Both)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Graham Street northwards to the extended line of the south kerb of Hallcraig Street a distance of 110 metres or thereby.</i></div>`)[0];
+                popup_e55c67f4377ecdc8816c61021a4cea48.setContent(html_bc7252722992e4bf9cb96e73b7d5a43a);
+            
+        
+
+        geo_json_bf633df4c5ed6a7b8c075330b87be4b7.bindPopup(popup_e55c67f4377ecdc8816c61021a4cea48)
+        ;
+
+        
+    
+    
+            geo_json_bf633df4c5ed6a7b8c075330b87be4b7.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_bc982e53b65c888fe7c09348ee6e5b10_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_bc982e53b65c888fe7c09348ee6e5b10_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_bc982e53b65c888fe7c09348ee6e5b10 = L.geoJson(null, {
+                onEachFeature: geo_json_bc982e53b65c888fe7c09348ee6e5b10_onEachFeature,
+            
+                style: geo_json_bc982e53b65c888fe7c09348ee6e5b10_styler,
+            ...{
+}
+        });
+
+        function geo_json_bc982e53b65c888fe7c09348ee6e5b10_add (data) {
+            geo_json_bc982e53b65c888fe7c09348ee6e5b10
+                .addData(data);
+        }
+            geo_json_bc982e53b65c888fe7c09348ee6e5b10_add({"features": [{"geometry": {"coordinates": [[-3.9806898380695994, 55.86553189701106], [-3.9805941917567655, 55.86498730521275], [-3.9805151633014515, 55.86452737165917], [-3.9806084670240525, 55.86393354551079], [-3.9808579750881874, 55.86349815903239]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_bc982e53b65c888fe7c09348ee6e5b10.bindTooltip(
+                `<div>
+                     Broomknoll Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e9424deed8eeb5b527361e09cddcf9b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13d95e76b95c9e42165c015355dc19dc = $(`<div id="html_13d95e76b95c9e42165c015355dc19dc" style="width: 100.0%; height: 100.0%;"><b>Broomknoll Street</b> (East)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Callon Street southwards to the extended line of the south kerb of Victoria Place a distance of 227 metres or thereby.</i></div>`)[0];
+                popup_e9424deed8eeb5b527361e09cddcf9b3.setContent(html_13d95e76b95c9e42165c015355dc19dc);
+            
+        
+
+        geo_json_bc982e53b65c888fe7c09348ee6e5b10.bindPopup(popup_e9424deed8eeb5b527361e09cddcf9b3)
+        ;
+
+        
+    
+    
+            geo_json_bc982e53b65c888fe7c09348ee6e5b10.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_7ba95974c44f94ee756a72e5a2b4e967_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_7ba95974c44f94ee756a72e5a2b4e967_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_7ba95974c44f94ee756a72e5a2b4e967 = L.geoJson(null, {
+                onEachFeature: geo_json_7ba95974c44f94ee756a72e5a2b4e967_onEachFeature,
+            
+                style: geo_json_7ba95974c44f94ee756a72e5a2b4e967_styler,
+            ...{
+}
+        });
+
+        function geo_json_7ba95974c44f94ee756a72e5a2b4e967_add (data) {
+            geo_json_7ba95974c44f94ee756a72e5a2b4e967
+                .addData(data);
+        }
+            geo_json_7ba95974c44f94ee756a72e5a2b4e967_add({"features": [{"geometry": {"coordinates": [[-3.9792596128891318, 55.86694787678683], [-3.979193275079106, 55.86613716115707]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_7ba95974c44f94ee756a72e5a2b4e967.bindTooltip(
+                `<div>
+                     Buchanan Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e8ac7cbdbab2edad7a1622e70d24a2f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f54bf318526a43de2bf1da2b8aef708d = $(`<div id="html_f54bf318526a43de2bf1da2b8aef708d" style="width: 100.0%; height: 100.0%;"><b>Buchanan Street</b> (Both)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Hallcraig Street southwards to the extended line of the south kerb of Graham Street a distance of 88 metres or thereby.</i></div>`)[0];
+                popup_e8ac7cbdbab2edad7a1622e70d24a2f0.setContent(html_f54bf318526a43de2bf1da2b8aef708d);
+            
+        
+
+        geo_json_7ba95974c44f94ee756a72e5a2b4e967.bindPopup(popup_e8ac7cbdbab2edad7a1622e70d24a2f0)
+        ;
+
+        
+    
+    
+            geo_json_7ba95974c44f94ee756a72e5a2b4e967.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3a0ee9b9246accb8a6a6fa25140f0c61 = L.geoJson(null, {
+                onEachFeature: geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_onEachFeature,
+            
+                style: geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_styler,
+            ...{
+}
+        });
+
+        function geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_add (data) {
+            geo_json_3a0ee9b9246accb8a6a6fa25140f0c61
+                .addData(data);
+        }
+            geo_json_3a0ee9b9246accb8a6a6fa25140f0c61_add({"features": [{"geometry": {"coordinates": [[-3.9808579750881874, 55.86349815903239], [-3.980666189737567, 55.863193278821946]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3a0ee9b9246accb8a6a6fa25140f0c61.bindTooltip(
+                `<div>
+                     Cairnhill Road — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_23b2917b7d608237cdfdf60bbb988b7e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a571534e5e7746e441efa4ecab0d52c1 = $(`<div id="html_a571534e5e7746e441efa4ecab0d52c1" style="width: 100.0%; height: 100.0%;"><b>Cairnhill Road</b> (nan)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southern kerb of Victoria Place southwards for a distance of 36 metres or thereby.</i></div>`)[0];
+                popup_23b2917b7d608237cdfdf60bbb988b7e.setContent(html_a571534e5e7746e441efa4ecab0d52c1);
+            
+        
+
+        geo_json_3a0ee9b9246accb8a6a6fa25140f0c61.bindPopup(popup_23b2917b7d608237cdfdf60bbb988b7e)
+        ;
+
+        
+    
+    
+            geo_json_3a0ee9b9246accb8a6a6fa25140f0c61.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_c8c438bf50f7898f63eea47bf43fbd0e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_c8c438bf50f7898f63eea47bf43fbd0e_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c8c438bf50f7898f63eea47bf43fbd0e = L.geoJson(null, {
+                onEachFeature: geo_json_c8c438bf50f7898f63eea47bf43fbd0e_onEachFeature,
+            
+                style: geo_json_c8c438bf50f7898f63eea47bf43fbd0e_styler,
+            ...{
+}
+        });
+
+        function geo_json_c8c438bf50f7898f63eea47bf43fbd0e_add (data) {
+            geo_json_c8c438bf50f7898f63eea47bf43fbd0e
+                .addData(data);
+        }
+            geo_json_c8c438bf50f7898f63eea47bf43fbd0e_add({"features": [{"geometry": {"coordinates": [[-3.945930080970033, 55.870642880237256], [-3.946078223140553, 55.87057444949265]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c8c438bf50f7898f63eea47bf43fbd0e.bindTooltip(
+                `<div>
+                     Forrest Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_52d2a3b17ebb37dddb2d1aee45671c01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ee5b3a073423b0c3ef3f687c3fbd9b = $(`<div id="html_b6ee5b3a073423b0c3ef3f687c3fbd9b" style="width: 100.0%; height: 100.0%;"><b>Forrest Street</b> (Northwest)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south western kerb of Connor Street south westwards for a distance of 12 metres or thereby.</i></div>`)[0];
+                popup_52d2a3b17ebb37dddb2d1aee45671c01.setContent(html_b6ee5b3a073423b0c3ef3f687c3fbd9b);
+            
+        
+
+        geo_json_c8c438bf50f7898f63eea47bf43fbd0e.bindPopup(popup_52d2a3b17ebb37dddb2d1aee45671c01)
+        ;
+
+        
+    
+    
+            geo_json_c8c438bf50f7898f63eea47bf43fbd0e.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_9b73c617593e3b0958731e1c62feabec_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_9b73c617593e3b0958731e1c62feabec_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_9b73c617593e3b0958731e1c62feabec = L.geoJson(null, {
+                onEachFeature: geo_json_9b73c617593e3b0958731e1c62feabec_onEachFeature,
+            
+                style: geo_json_9b73c617593e3b0958731e1c62feabec_styler,
+            ...{
+}
+        });
+
+        function geo_json_9b73c617593e3b0958731e1c62feabec_add (data) {
+            geo_json_9b73c617593e3b0958731e1c62feabec
+                .addData(data);
+        }
+            geo_json_9b73c617593e3b0958731e1c62feabec_add({"features": [{"geometry": {"coordinates": [[-3.945930080970033, 55.870642880237256], [-3.9454198741619155, 55.8709647397629]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_9b73c617593e3b0958731e1c62feabec.bindTooltip(
+                `<div>
+                     Forrest Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_5c605674fea5e2a9491f8fdb626de4cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68f8a764b950c9d1bbdfcdb732543eb4 = $(`<div id="html_68f8a764b950c9d1bbdfcdb732543eb4" style="width: 100.0%; height: 100.0%;"><b>Forrest Street</b> (Northwest)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north eastern kerb of Connor Street north eastwards for a distance of 48 metres or thereby.</i></div>`)[0];
+                popup_5c605674fea5e2a9491f8fdb626de4cc.setContent(html_68f8a764b950c9d1bbdfcdb732543eb4);
+            
+        
+
+        geo_json_9b73c617593e3b0958731e1c62feabec.bindPopup(popup_5c605674fea5e2a9491f8fdb626de4cc)
+        ;
+
+        
+    
+    
+            geo_json_9b73c617593e3b0958731e1c62feabec.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_423e1610b27e1723793737e2d4cde4a0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_423e1610b27e1723793737e2d4cde4a0_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_423e1610b27e1723793737e2d4cde4a0 = L.geoJson(null, {
+                onEachFeature: geo_json_423e1610b27e1723793737e2d4cde4a0_onEachFeature,
+            
+                style: geo_json_423e1610b27e1723793737e2d4cde4a0_styler,
+            ...{
+}
+        });
+
+        function geo_json_423e1610b27e1723793737e2d4cde4a0_add (data) {
+            geo_json_423e1610b27e1723793737e2d4cde4a0
+                .addData(data);
+        }
+            geo_json_423e1610b27e1723793737e2d4cde4a0_add({"features": [{"geometry": {"coordinates": [[-3.9772502555302967, 55.866175771761796], [-3.973722032403736, 55.866479650885275]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_423e1610b27e1723793737e2d4cde4a0.bindTooltip(
+                `<div>
+                     Graham Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_0d479130ff65124aa115eaeda4387fe5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc6550588774abad40ac9067f69e2484 = $(`<div id="html_fc6550588774abad40ac9067f69e2484" style="width: 100.0%; height: 100.0%;"><b>Graham Street</b> (North)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the east kerb of Baillies Lane eastwards to the extended line of the west kerb of Forsyth Street a distance of 296 metres or thereby.</i></div>`)[0];
+                popup_0d479130ff65124aa115eaeda4387fe5.setContent(html_fc6550588774abad40ac9067f69e2484);
+            
+        
+
+        geo_json_423e1610b27e1723793737e2d4cde4a0.bindPopup(popup_0d479130ff65124aa115eaeda4387fe5)
+        ;
+
+        
+    
+    
+            geo_json_423e1610b27e1723793737e2d4cde4a0.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_786a1166b02c554eead85ab87c424989_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_786a1166b02c554eead85ab87c424989_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_786a1166b02c554eead85ab87c424989 = L.geoJson(null, {
+                onEachFeature: geo_json_786a1166b02c554eead85ab87c424989_onEachFeature,
+            
+                style: geo_json_786a1166b02c554eead85ab87c424989_styler,
+            ...{
+}
+        });
+
+        function geo_json_786a1166b02c554eead85ab87c424989_add (data) {
+            geo_json_786a1166b02c554eead85ab87c424989
+                .addData(data);
+        }
+            geo_json_786a1166b02c554eead85ab87c424989_add({"features": [{"geometry": {"coordinates": [[-3.980981686951164, 55.86705775047], [-3.9808314359497565, 55.867057383646575], [-3.979713913833535, 55.86699988084796], [-3.9792596128891318, 55.86694787678683], [-3.9775997441978754, 55.86699254166183], [-3.977508785494139, 55.86700954552915]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_786a1166b02c554eead85ab87c424989.bindTooltip(
+                `<div>
+                     Hallcraig Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_a7bf1c01aa6052d41b369f21a77f7c9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac357616f7840c5a9cf42abc68563bf7 = $(`<div id="html_ac357616f7840c5a9cf42abc68563bf7" style="width: 100.0%; height: 100.0%;"><b>Hallcraig Street</b> (South)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From its junction with Bank Street eastwards for a distance of 219 metres or thereby.</i></div>`)[0];
+                popup_a7bf1c01aa6052d41b369f21a77f7c9e.setContent(html_ac357616f7840c5a9cf42abc68563bf7);
+            
+        
+
+        geo_json_786a1166b02c554eead85ab87c424989.bindPopup(popup_a7bf1c01aa6052d41b369f21a77f7c9e)
+        ;
+
+        
+    
+    
+            geo_json_786a1166b02c554eead85ab87c424989.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_c8051438738d76b73cf9238e10618505_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_c8051438738d76b73cf9238e10618505_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c8051438738d76b73cf9238e10618505 = L.geoJson(null, {
+                onEachFeature: geo_json_c8051438738d76b73cf9238e10618505_onEachFeature,
+            
+                style: geo_json_c8051438738d76b73cf9238e10618505_styler,
+            ...{
+}
+        });
+
+        function geo_json_c8051438738d76b73cf9238e10618505_add (data) {
+            geo_json_c8051438738d76b73cf9238e10618505
+                .addData(data);
+        }
+            geo_json_c8051438738d76b73cf9238e10618505_add({"features": [{"geometry": {"coordinates": [[-3.9865261176502393, 55.86746883323162], [-3.9852605471200073, 55.867827256743595], [-3.984556994955413, 55.8680308360643]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c8051438738d76b73cf9238e10618505.bindTooltip(
+                `<div>
+                     High Street — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_f5779a48819eb59fa4f8be8a8fe0c076 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27464d4b15af23f55df7ae324b024601 = $(`<div id="html_27464d4b15af23f55df7ae324b024601" style="width: 100.0%; height: 100.0%;"><b>High Street</b> (South)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the east kerb of Bell Street eastwards to the extended line of the west kerb of Wellwynd a distance of 128 metres or thereby.</i></div>`)[0];
+                popup_f5779a48819eb59fa4f8be8a8fe0c076.setContent(html_27464d4b15af23f55df7ae324b024601);
+            
+        
+
+        geo_json_c8051438738d76b73cf9238e10618505.bindPopup(popup_f5779a48819eb59fa4f8be8a8fe0c076)
+        ;
+
+        
+    
+    
+            geo_json_c8051438738d76b73cf9238e10618505.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_a178fa3fc075128be22762cc5f79e97b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_a178fa3fc075128be22762cc5f79e97b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a178fa3fc075128be22762cc5f79e97b = L.geoJson(null, {
+                onEachFeature: geo_json_a178fa3fc075128be22762cc5f79e97b_onEachFeature,
+            
+                style: geo_json_a178fa3fc075128be22762cc5f79e97b_styler,
+            ...{
+}
+        });
+
+        function geo_json_a178fa3fc075128be22762cc5f79e97b_add (data) {
+            geo_json_a178fa3fc075128be22762cc5f79e97b
+                .addData(data);
+        }
+            geo_json_a178fa3fc075128be22762cc5f79e97b_add({"features": [{"geometry": {"coordinates": [[-4.001093945330923, 55.862029340102104], [-4.001513901393437, 55.862426919326104], [-4.002404514112353, 55.8632751698795], [-4.002504393334962, 55.86336717804898]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a178fa3fc075128be22762cc5f79e97b.bindTooltip(
+                `<div>
+                     Southburn Road — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_fc7108720b1faaa856fcbf9632850529 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c1263f189ea2826107c37d70991e2ec = $(`<div id="html_0c1263f189ea2826107c37d70991e2ec" style="width: 100.0%; height: 100.0%;"><b>Southburn Road</b> (East)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the northwest kerb of A89 Deedes Street north westwards for a distance of 173 metres or thereby.</i></div>`)[0];
+                popup_fc7108720b1faaa856fcbf9632850529.setContent(html_0c1263f189ea2826107c37d70991e2ec);
+            
+        
+
+        geo_json_a178fa3fc075128be22762cc5f79e97b.bindPopup(popup_fc7108720b1faaa856fcbf9632850529)
+        ;
+
+        
+    
+    
+            geo_json_a178fa3fc075128be22762cc5f79e97b.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_aac30faf986a7711873ae9695794966d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_aac30faf986a7711873ae9695794966d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_aac30faf986a7711873ae9695794966d = L.geoJson(null, {
+                onEachFeature: geo_json_aac30faf986a7711873ae9695794966d_onEachFeature,
+            
+                style: geo_json_aac30faf986a7711873ae9695794966d_styler,
+            ...{
+}
+        });
+
+        function geo_json_aac30faf986a7711873ae9695794966d_add (data) {
+            geo_json_aac30faf986a7711873ae9695794966d
+                .addData(data);
+        }
+            geo_json_aac30faf986a7711873ae9695794966d_add({"features": [{"geometry": {"coordinates": [[-3.946563316605196, 55.87020149811191], [-3.9459393274931296, 55.86972545274612], [-3.945730771312302, 55.869617941218515]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_aac30faf986a7711873ae9695794966d.bindTooltip(
+                `<div>
+                     Towers Road — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_e6da3ec3166f89a36d0b01373702d3c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4663638e84b1e1d51c137d21e9e864e9 = $(`<div id="html_4663638e84b1e1d51c137d21e9e864e9" style="width: 100.0%; height: 100.0%;"><b>Towers Road</b> (North east)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southeast kerb of A89 Forrest Street south-eastwards for a distance of 84 metres or thereby.</i></div>`)[0];
+                popup_e6da3ec3166f89a36d0b01373702d3c2.setContent(html_4663638e84b1e1d51c137d21e9e864e9);
+            
+        
+
+        geo_json_aac30faf986a7711873ae9695794966d.bindPopup(popup_e6da3ec3166f89a36d0b01373702d3c2)
+        ;
+
+        
+    
+    
+            geo_json_aac30faf986a7711873ae9695794966d.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_e5e1974880bdd15a31fdb88f873ee93b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_e5e1974880bdd15a31fdb88f873ee93b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_e5e1974880bdd15a31fdb88f873ee93b = L.geoJson(null, {
+                onEachFeature: geo_json_e5e1974880bdd15a31fdb88f873ee93b_onEachFeature,
+            
+                style: geo_json_e5e1974880bdd15a31fdb88f873ee93b_styler,
+            ...{
+}
+        });
+
+        function geo_json_e5e1974880bdd15a31fdb88f873ee93b_add (data) {
+            geo_json_e5e1974880bdd15a31fdb88f873ee93b
+                .addData(data);
+        }
+            geo_json_e5e1974880bdd15a31fdb88f873ee93b_add({"features": [{"geometry": {"coordinates": [[-3.946563316605196, 55.87020149811191], [-3.9459393274931296, 55.86972545274612], [-3.9457210447582933, 55.86961081456071]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_e5e1974880bdd15a31fdb88f873ee93b.bindTooltip(
+                `<div>
+                     Towers Road — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_6c411c6f98148ee296b04a4018220921 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00ad0c2d6e7ffcfb277504187a5e8733 = $(`<div id="html_00ad0c2d6e7ffcfb277504187a5e8733" style="width: 100.0%; height: 100.0%;"><b>Towers Road</b> (South west)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southeast kerb of A89 Forrest Street south-eastwards for a distance of 85 metres or thereby.</i></div>`)[0];
+                popup_6c411c6f98148ee296b04a4018220921.setContent(html_00ad0c2d6e7ffcfb277504187a5e8733);
+            
+        
+
+        geo_json_e5e1974880bdd15a31fdb88f873ee93b.bindPopup(popup_6c411c6f98148ee296b04a4018220921)
+        ;
+
+        
+    
+    
+            geo_json_e5e1974880bdd15a31fdb88f873ee93b.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_ff6d9740084a2db16d3601dbd851f988_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_ff6d9740084a2db16d3601dbd851f988_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ff6d9740084a2db16d3601dbd851f988 = L.geoJson(null, {
+                onEachFeature: geo_json_ff6d9740084a2db16d3601dbd851f988_onEachFeature,
+            
+                style: geo_json_ff6d9740084a2db16d3601dbd851f988_styler,
+            ...{
+}
+        });
+
+        function geo_json_ff6d9740084a2db16d3601dbd851f988_add (data) {
+            geo_json_ff6d9740084a2db16d3601dbd851f988
+                .addData(data);
+        }
+            geo_json_ff6d9740084a2db16d3601dbd851f988_add({"features": [{"geometry": {"coordinates": [[-3.982721163957154, 55.865912753453536], [-3.982763593032858, 55.8663971806374], [-3.9829215005716074, 55.866673228549736], [-3.982987071661879, 55.86672416654071]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_ff6d9740084a2db16d3601dbd851f988.bindTooltip(
+                `<div>
+                     Wellwynd — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_5684edad89de2f586561b39850bc3106 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efcc5476ab5a44b23cf2c85ac2f666f7 = $(`<div id="html_efcc5476ab5a44b23cf2c85ac2f666f7" style="width: 100.0%; height: 100.0%;"><b>Wellwynd</b> (West)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Stirling Street northwards for a distance of 95 metres or thereby.</i></div>`)[0];
+                popup_5684edad89de2f586561b39850bc3106.setContent(html_efcc5476ab5a44b23cf2c85ac2f666f7);
+            
+        
+
+        geo_json_ff6d9740084a2db16d3601dbd851f988.bindPopup(popup_5684edad89de2f586561b39850bc3106)
+        ;
+
+        
+    
+    
+            geo_json_ff6d9740084a2db16d3601dbd851f988.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_065b86bed5d4448990ea75465d6b6fc8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3cb44b", "weight": 4};
+            }
+        }
+
+        function geo_json_065b86bed5d4448990ea75465d6b6fc8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_065b86bed5d4448990ea75465d6b6fc8 = L.geoJson(null, {
+                onEachFeature: geo_json_065b86bed5d4448990ea75465d6b6fc8_onEachFeature,
+            
+                style: geo_json_065b86bed5d4448990ea75465d6b6fc8_styler,
+            ...{
+}
+        });
+
+        function geo_json_065b86bed5d4448990ea75465d6b6fc8_add (data) {
+            geo_json_065b86bed5d4448990ea75465d6b6fc8
+                .addData(data);
+        }
+            geo_json_065b86bed5d4448990ea75465d6b6fc8_add({"features": [{"geometry": {"coordinates": [[-3.982721163957154, 55.865912753453536], [-3.982763593032858, 55.8663971806374], [-3.9829215005716074, 55.866673228549736]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_065b86bed5d4448990ea75465d6b6fc8.bindTooltip(
+                `<div>
+                     Wellwynd — Schedule II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_636b79d77068e187b5b46246f3dabc0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_389d1824bd5dbd58868ac00b73dea0fd = $(`<div id="html_389d1824bd5dbd58868ac00b73dea0fd" style="width: 100.0%; height: 100.0%;"><b>Wellwynd</b> (East)<br>Schedule II<br>SCHEDULE II NO WAITING MONDAY TO SATURDAY 0800 to 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Stirling Street northwards to the extended line of the south kerb of Anderson Street a distance of 85 metres or thereby.</i></div>`)[0];
+                popup_636b79d77068e187b5b46246f3dabc0d.setContent(html_389d1824bd5dbd58868ac00b73dea0fd);
+            
+        
+
+        geo_json_065b86bed5d4448990ea75465d6b6fc8.bindPopup(popup_636b79d77068e187b5b46246f3dabc0d)
+        ;
+
+        
+    
+    
+            geo_json_065b86bed5d4448990ea75465d6b6fc8.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_aa7627c96250c2af28494e4f115e6683_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_aa7627c96250c2af28494e4f115e6683_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_aa7627c96250c2af28494e4f115e6683 = L.geoJson(null, {
+                onEachFeature: geo_json_aa7627c96250c2af28494e4f115e6683_onEachFeature,
+            
+                style: geo_json_aa7627c96250c2af28494e4f115e6683_styler,
+            ...{
+}
+        });
+
+        function geo_json_aa7627c96250c2af28494e4f115e6683_add (data) {
+            geo_json_aa7627c96250c2af28494e4f115e6683
+                .addData(data);
+        }
+            geo_json_aa7627c96250c2af28494e4f115e6683_add({"features": [{"geometry": {"coordinates": [[-3.9829215005716074, 55.866673228549736], [-3.982826078471381, 55.8667060174511]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_aa7627c96250c2af28494e4f115e6683.bindTooltip(
+                `<div>
+                     Anderson Street — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_074c7016c36bde0ed26257e540a0ef8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28e578ac021c069d83da92b9e2ca874c = $(`<div id="html_28e578ac021c069d83da92b9e2ca874c" style="width: 100.0%; height: 100.0%;"><b>Anderson Street</b> (South)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the east kerb of Wellwynd eastwards for a distance of 7 metres or thereby.</i></div>`)[0];
+                popup_074c7016c36bde0ed26257e540a0ef8a.setContent(html_28e578ac021c069d83da92b9e2ca874c);
+            
+        
+
+        geo_json_aa7627c96250c2af28494e4f115e6683.bindPopup(popup_074c7016c36bde0ed26257e540a0ef8a)
+        ;
+
+        
+    
+    
+            geo_json_aa7627c96250c2af28494e4f115e6683.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_503c849dc6ed3387d2229d8bc93e26ad_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_503c849dc6ed3387d2229d8bc93e26ad_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_503c849dc6ed3387d2229d8bc93e26ad = L.geoJson(null, {
+                onEachFeature: geo_json_503c849dc6ed3387d2229d8bc93e26ad_onEachFeature,
+            
+                style: geo_json_503c849dc6ed3387d2229d8bc93e26ad_styler,
+            ...{
+}
+        });
+
+        function geo_json_503c849dc6ed3387d2229d8bc93e26ad_add (data) {
+            geo_json_503c849dc6ed3387d2229d8bc93e26ad
+                .addData(data);
+        }
+            geo_json_503c849dc6ed3387d2229d8bc93e26ad_add({"features": [{"geometry": {"coordinates": [[-3.9809788517220936, 55.866876531153544], [-3.981537905403384, 55.86687088547218]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_503c849dc6ed3387d2229d8bc93e26ad.bindTooltip(
+                `<div>
+                     Anderson Street — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_20cd230bc0d10edb40d1a238c2d3659f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f3c4a3bc99ca2b14c9cd5181bcd5d44 = $(`<div id="html_9f3c4a3bc99ca2b14c9cd5181bcd5d44" style="width: 100.0%; height: 100.0%;"><b>Anderson Street</b> (South)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the west kerb of Bank Street westwards for a distance of 35 metres or thereby.</i></div>`)[0];
+                popup_20cd230bc0d10edb40d1a238c2d3659f.setContent(html_9f3c4a3bc99ca2b14c9cd5181bcd5d44);
+            
+        
+
+        geo_json_503c849dc6ed3387d2229d8bc93e26ad.bindPopup(popup_20cd230bc0d10edb40d1a238c2d3659f)
+        ;
+
+        
+    
+    
+            geo_json_503c849dc6ed3387d2229d8bc93e26ad.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_a89f1e63bca924ed02b19e03e2d4f05e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_a89f1e63bca924ed02b19e03e2d4f05e_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a89f1e63bca924ed02b19e03e2d4f05e = L.geoJson(null, {
+                onEachFeature: geo_json_a89f1e63bca924ed02b19e03e2d4f05e_onEachFeature,
+            
+                style: geo_json_a89f1e63bca924ed02b19e03e2d4f05e_styler,
+            ...{
+}
+        });
+
+        function geo_json_a89f1e63bca924ed02b19e03e2d4f05e_add (data) {
+            geo_json_a89f1e63bca924ed02b19e03e2d4f05e
+                .addData(data);
+        }
+            geo_json_a89f1e63bca924ed02b19e03e2d4f05e_add({"features": [{"geometry": {"coordinates": [[-3.9808579750881874, 55.86349815903239], [-3.9807195012409813, 55.8632779602212]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a89f1e63bca924ed02b19e03e2d4f05e.bindTooltip(
+                `<div>
+                     Cairnhill Road — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_56e4da5e1876fd743f922ce82f7a6a22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9aa2bd6d428eb37ca5b8bf5449294118 = $(`<div id="html_9aa2bd6d428eb37ca5b8bf5449294118" style="width: 100.0%; height: 100.0%;"><b>Cairnhill Road</b> (West)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Victoria Place southwards for a distance of 26 metres or thereby.</i></div>`)[0];
+                popup_56e4da5e1876fd743f922ce82f7a6a22.setContent(html_9aa2bd6d428eb37ca5b8bf5449294118);
+            
+        
+
+        geo_json_a89f1e63bca924ed02b19e03e2d4f05e.bindPopup(popup_56e4da5e1876fd743f922ce82f7a6a22)
+        ;
+
+        
+    
+    
+            geo_json_a89f1e63bca924ed02b19e03e2d4f05e.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_68ca916190d0f9188bfb1fc0279aefff_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_68ca916190d0f9188bfb1fc0279aefff_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_68ca916190d0f9188bfb1fc0279aefff = L.geoJson(null, {
+                onEachFeature: geo_json_68ca916190d0f9188bfb1fc0279aefff_onEachFeature,
+            
+                style: geo_json_68ca916190d0f9188bfb1fc0279aefff_styler,
+            ...{
+}
+        });
+
+        function geo_json_68ca916190d0f9188bfb1fc0279aefff_add (data) {
+            geo_json_68ca916190d0f9188bfb1fc0279aefff
+                .addData(data);
+        }
+            geo_json_68ca916190d0f9188bfb1fc0279aefff_add({"features": [{"geometry": {"coordinates": [[-3.980981686951164, 55.86705775047], [-3.981079531044194, 55.867139832078074]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_68ca916190d0f9188bfb1fc0279aefff.bindTooltip(
+                `<div>
+                     South Bridge Street — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_1704e2f91c301c6fc5121fd03ce646cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c032d4ebfec7505e8bbdfc81bcc0f0b = $(`<div id="html_8c032d4ebfec7505e8bbdfc81bcc0f0b" style="width: 100.0%; height: 100.0%;"><b>South Bridge Street</b> (East)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Hallcraig Street northwards for a distance of 11 metres or thereby.</i></div>`)[0];
+                popup_1704e2f91c301c6fc5121fd03ce646cb.setContent(html_8c032d4ebfec7505e8bbdfc81bcc0f0b);
+            
+        
+
+        geo_json_68ca916190d0f9188bfb1fc0279aefff.bindPopup(popup_1704e2f91c301c6fc5121fd03ce646cb)
+        ;
+
+        
+    
+    
+            geo_json_68ca916190d0f9188bfb1fc0279aefff.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_3c19f8f47ca095ee69f09f668d3720b0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_3c19f8f47ca095ee69f09f668d3720b0_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3c19f8f47ca095ee69f09f668d3720b0 = L.geoJson(null, {
+                onEachFeature: geo_json_3c19f8f47ca095ee69f09f668d3720b0_onEachFeature,
+            
+                style: geo_json_3c19f8f47ca095ee69f09f668d3720b0_styler,
+            ...{
+}
+        });
+
+        function geo_json_3c19f8f47ca095ee69f09f668d3720b0_add (data) {
+            geo_json_3c19f8f47ca095ee69f09f668d3720b0
+                .addData(data);
+        }
+            geo_json_3c19f8f47ca095ee69f09f668d3720b0_add({"features": [{"geometry": {"coordinates": [[-3.980981686951164, 55.86705775047], [-3.9811329007244267, 55.86718460382974]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3c19f8f47ca095ee69f09f668d3720b0.bindTooltip(
+                `<div>
+                     South Bridge Street — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_61e1ab7630d2febd3469899f288f88a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4fc2f1f7f2298d48ca477aff009adb7 = $(`<div id="html_e4fc2f1f7f2298d48ca477aff009adb7" style="width: 100.0%; height: 100.0%;"><b>South Bridge Street</b> (West)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of Hallcraig Street northwards for a distance of 17 metres or thereby.</i></div>`)[0];
+                popup_61e1ab7630d2febd3469899f288f88a8.setContent(html_e4fc2f1f7f2298d48ca477aff009adb7);
+            
+        
+
+        geo_json_3c19f8f47ca095ee69f09f668d3720b0.bindPopup(popup_61e1ab7630d2febd3469899f288f88a8)
+        ;
+
+        
+    
+    
+            geo_json_3c19f8f47ca095ee69f09f668d3720b0.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_b86464d65d36d7b6aa6d9119844bae3f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#4363d8", "weight": 4};
+            }
+        }
+
+        function geo_json_b86464d65d36d7b6aa6d9119844bae3f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_b86464d65d36d7b6aa6d9119844bae3f = L.geoJson(null, {
+                onEachFeature: geo_json_b86464d65d36d7b6aa6d9119844bae3f_onEachFeature,
+            
+                style: geo_json_b86464d65d36d7b6aa6d9119844bae3f_styler,
+            ...{
+}
+        });
+
+        function geo_json_b86464d65d36d7b6aa6d9119844bae3f_add (data) {
+            geo_json_b86464d65d36d7b6aa6d9119844bae3f
+                .addData(data);
+        }
+            geo_json_b86464d65d36d7b6aa6d9119844bae3f_add({"features": [{"geometry": {"coordinates": [[-3.976649811861239, 55.86716957007969], [-3.976998320992505, 55.86747064664912]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b86464d65d36d7b6aa6d9119844bae3f.bindTooltip(
+                `<div>
+                     Upper Mill Street — Schedule III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_c9453edea661b7f9dde8bbe3b0a08aaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c085ca27fe129b0d2b26ca252b97c790 = $(`<div id="html_c085ca27fe129b0d2b26ca252b97c790" style="width: 100.0%; height: 100.0%;"><b>Upper Mill Street</b> (Both)<br>Schedule III<br>SCHEDULE III NO WAITING MONDAY TO SATURDAY 0800 TO 1800 NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Hallcraig Street northwards for a distance of 40 metres or thereby.</i></div>`)[0];
+                popup_c9453edea661b7f9dde8bbe3b0a08aaa.setContent(html_c085ca27fe129b0d2b26ca252b97c790);
+            
+        
+
+        geo_json_b86464d65d36d7b6aa6d9119844bae3f.bindPopup(popup_c9453edea661b7f9dde8bbe3b0a08aaa)
+        ;
+
+        
+    
+    
+            geo_json_b86464d65d36d7b6aa6d9119844bae3f.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_d8d734c1e57446371c6b9e6fdcc73998_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#f58231", "weight": 4};
+            }
+        }
+
+        function geo_json_d8d734c1e57446371c6b9e6fdcc73998_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d8d734c1e57446371c6b9e6fdcc73998 = L.geoJson(null, {
+                onEachFeature: geo_json_d8d734c1e57446371c6b9e6fdcc73998_onEachFeature,
+            
+                style: geo_json_d8d734c1e57446371c6b9e6fdcc73998_styler,
+            ...{
+}
+        });
+
+        function geo_json_d8d734c1e57446371c6b9e6fdcc73998_add (data) {
+            geo_json_d8d734c1e57446371c6b9e6fdcc73998
+                .addData(data);
+        }
+            geo_json_d8d734c1e57446371c6b9e6fdcc73998_add({"features": [{"geometry": {"coordinates": [[-3.9826831752451244, 55.8685822842483], [-3.9826102015520424, 55.86851262170926]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_d8d734c1e57446371c6b9e6fdcc73998.bindTooltip(
+                `<div>
+                     South Bridge Street — Schedule IV
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_2142263186da12fda65accf86e02e9b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6bbdb310ae14ce9c81f950aca8e20cbe = $(`<div id="html_6bbdb310ae14ce9c81f950aca8e20cbe" style="width: 100.0%; height: 100.0%;"><b>South Bridge Street</b> (nan)<br>Schedule IV<br>SCHEDULE IV NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the south kerb of High Street southwards for a distance of 9 metres or thereby.</i></div>`)[0];
+                popup_2142263186da12fda65accf86e02e9b9.setContent(html_6bbdb310ae14ce9c81f950aca8e20cbe);
+            
+        
+
+        geo_json_d8d734c1e57446371c6b9e6fdcc73998.bindPopup(popup_2142263186da12fda65accf86e02e9b9)
+        ;
+
+        
+    
+    
+            geo_json_d8d734c1e57446371c6b9e6fdcc73998.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_9b5497df3c2b250fad35c793a4835a8d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#f58231", "weight": 4};
+            }
+        }
+
+        function geo_json_9b5497df3c2b250fad35c793a4835a8d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_9b5497df3c2b250fad35c793a4835a8d = L.geoJson(null, {
+                onEachFeature: geo_json_9b5497df3c2b250fad35c793a4835a8d_onEachFeature,
+            
+                style: geo_json_9b5497df3c2b250fad35c793a4835a8d_styler,
+            ...{
+}
+        });
+
+        function geo_json_9b5497df3c2b250fad35c793a4835a8d_add (data) {
+            geo_json_9b5497df3c2b250fad35c793a4835a8d
+                .addData(data);
+        }
+            geo_json_9b5497df3c2b250fad35c793a4835a8d_add({"features": [{"geometry": {"coordinates": [[-3.9826831752451244, 55.8685822842483], [-3.984556994955413, 55.8680308360643], [-3.9852605471200073, 55.867827256743595], [-3.9865261176502393, 55.86746883323162], [-3.9868568842693435, 55.86737362350797]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_9b5497df3c2b250fad35c793a4835a8d.bindTooltip(
+                `<div>
+                     High Street — Schedule IV
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d0673cfb71d7440b1477da17bde822c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6bbc3e2d173fdc9b32ba401c75df422 = $(`<div id="html_e6bbc3e2d173fdc9b32ba401c75df422" style="width: 100.0%; height: 100.0%;"><b>High Street</b> (North)<br>Schedule IV<br>SCHEDULE IV NO WAITING AT ANY TIME MONDAY TO SATURDAY NO LOADING 0830 to 0930 & 1630 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the west kerb of North Bridge Street westwards to the extended line of the east kerb of Davidson Street a distance of 283 metres or thereby.</i></div>`)[0];
+                popup_d0673cfb71d7440b1477da17bde822c5.setContent(html_e6bbc3e2d173fdc9b32ba401c75df422);
+            
+        
+
+        geo_json_9b5497df3c2b250fad35c793a4835a8d.bindPopup(popup_d0673cfb71d7440b1477da17bde822c5)
+        ;
+
+        
+    
+    
+            geo_json_9b5497df3c2b250fad35c793a4835a8d.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_accd948c66bcbbff05bd21666677267e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#911eb4", "weight": 4};
+            }
+        }
+
+        function geo_json_accd948c66bcbbff05bd21666677267e_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_accd948c66bcbbff05bd21666677267e = L.geoJson(null, {
+                onEachFeature: geo_json_accd948c66bcbbff05bd21666677267e_onEachFeature,
+            
+                style: geo_json_accd948c66bcbbff05bd21666677267e_styler,
+            ...{
+}
+        });
+
+        function geo_json_accd948c66bcbbff05bd21666677267e_add (data) {
+            geo_json_accd948c66bcbbff05bd21666677267e
+                .addData(data);
+        }
+            geo_json_accd948c66bcbbff05bd21666677267e_add({"features": [{"geometry": {"coordinates": [[-4.002602263748999, 55.86152849066459], [-4.0017063457315745, 55.86088702689278]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_accd948c66bcbbff05bd21666677267e.bindTooltip(
+                `<div>
+                     Rochsolloch Road — Schedule IX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_10a44624148af8725946ccf614f3fb9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7a83e4c339baa0e097bcf9e78953777 = $(`<div id="html_f7a83e4c339baa0e097bcf9e78953777" style="width: 100.0%; height: 100.0%;"><b>Rochsolloch Road</b> (East)<br>Schedule IX<br>SCHEDULE IX NO WAITING AT ANY TIME NO LOADING 0800 to 0930 & 1600 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southeast kerb of Deedes Street south eastwards to the extended line of the northwest kerb of Kippen Street a distance of 81 metres or thereby</i></div>`)[0];
+                popup_10a44624148af8725946ccf614f3fb9b.setContent(html_f7a83e4c339baa0e097bcf9e78953777);
+            
+        
+
+        geo_json_accd948c66bcbbff05bd21666677267e.bindPopup(popup_10a44624148af8725946ccf614f3fb9b)
+        ;
+
+        
+    
+    
+            geo_json_accd948c66bcbbff05bd21666677267e.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_2c70ef5a68811dcfcda0629bca5798b8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#911eb4", "weight": 4};
+            }
+        }
+
+        function geo_json_2c70ef5a68811dcfcda0629bca5798b8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_2c70ef5a68811dcfcda0629bca5798b8 = L.geoJson(null, {
+                onEachFeature: geo_json_2c70ef5a68811dcfcda0629bca5798b8_onEachFeature,
+            
+                style: geo_json_2c70ef5a68811dcfcda0629bca5798b8_styler,
+            ...{
+}
+        });
+
+        function geo_json_2c70ef5a68811dcfcda0629bca5798b8_add (data) {
+            geo_json_2c70ef5a68811dcfcda0629bca5798b8
+                .addData(data);
+        }
+            geo_json_2c70ef5a68811dcfcda0629bca5798b8_add({"features": [{"geometry": {"coordinates": [[-4.002602263748999, 55.86152849066459], [-4.002387523176644, 55.86137205352415]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_2c70ef5a68811dcfcda0629bca5798b8.bindTooltip(
+                `<div>
+                     Rochsolloch Road — Schedule IX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d3c87881ab86b1f9340ad79cf1839a97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14dacce7390a2c039120598e1acb10f9 = $(`<div id="html_14dacce7390a2c039120598e1acb10f9" style="width: 100.0%; height: 100.0%;"><b>Rochsolloch Road</b> (West)<br>Schedule IX<br>SCHEDULE IX NO WAITING AT ANY TIME NO LOADING 0800 to 0930 & 1600 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southeast kerb of Deedes Street south eastwards for a distance of 22 metres</i></div>`)[0];
+                popup_d3c87881ab86b1f9340ad79cf1839a97.setContent(html_14dacce7390a2c039120598e1acb10f9);
+            
+        
+
+        geo_json_2c70ef5a68811dcfcda0629bca5798b8.bindPopup(popup_d3c87881ab86b1f9340ad79cf1839a97)
+        ;
+
+        
+    
+    
+            geo_json_2c70ef5a68811dcfcda0629bca5798b8.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#911eb4", "weight": 4};
+            }
+        }
+
+        function geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b = L.geoJson(null, {
+                onEachFeature: geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_onEachFeature,
+            
+                style: geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_styler,
+            ...{
+}
+        });
+
+        function geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_add (data) {
+            geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b
+                .addData(data);
+        }
+            geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b_add({"features": [{"geometry": {"coordinates": [[-4.004667091478567, 55.86077276312443], [-4.004483386902805, 55.85955048508389]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b.bindTooltip(
+                `<div>
+                     Locks Street — Schedule IX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_53533ce29b91bf46b4ad6563feeee053 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1dde56d501d5e6aeea325da4908383c = $(`<div id="html_d1dde56d501d5e6aeea325da4908383c" style="width: 100.0%; height: 100.0%;"><b>Locks Street</b> (Both)<br>Schedule IX<br>SCHEDULE IX NO WAITING AT ANY TIME NO LOADING 0800 to 0930 & 1600 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the southeast kerb of A89 Main Street southwards for a distance of 143 metres</i></div>`)[0];
+                popup_53533ce29b91bf46b4ad6563feeee053.setContent(html_d1dde56d501d5e6aeea325da4908383c);
+            
+        
+
+        geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b.bindPopup(popup_53533ce29b91bf46b4ad6563feeee053)
+        ;
+
+        
+    
+    
+            geo_json_8b5ccabce8bd2d7ec2d5dfd3055a7f3b.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_3862858700eb582959317b09fc69eacc_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#911eb4", "weight": 4};
+            }
+        }
+
+        function geo_json_3862858700eb582959317b09fc69eacc_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3862858700eb582959317b09fc69eacc = L.geoJson(null, {
+                onEachFeature: geo_json_3862858700eb582959317b09fc69eacc_onEachFeature,
+            
+                style: geo_json_3862858700eb582959317b09fc69eacc_styler,
+            ...{
+}
+        });
+
+        function geo_json_3862858700eb582959317b09fc69eacc_add (data) {
+            geo_json_3862858700eb582959317b09fc69eacc
+                .addData(data);
+        }
+            geo_json_3862858700eb582959317b09fc69eacc_add({"features": [{"geometry": {"coordinates": [[-4.005884197342371, 55.861025677201475], [-4.005807013185714, 55.86118143839767]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3862858700eb582959317b09fc69eacc.bindTooltip(
+                `<div>
+                     Quarry Street — Schedule IX
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_3a2fa79df6ac85906fd5863c175aeaaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f226bc3bd93ce2606089ec2d8a73c873 = $(`<div id="html_f226bc3bd93ce2606089ec2d8a73c873" style="width: 100.0%; height: 100.0%;"><b>Quarry Street</b> (Both)<br>Schedule IX<br>SCHEDULE IX NO WAITING AT ANY TIME NO LOADING 0800 to 0930 & 1600 to 1800 MONDAY TO SATURDAY<br><i>From the extended line of the northeast kerb of Muiryhall Street East northwards for a distance of 18 metres</i></div>`)[0];
+                popup_3a2fa79df6ac85906fd5863c175aeaaa.setContent(html_f226bc3bd93ce2606089ec2d8a73c873);
+            
+        
+
+        geo_json_3862858700eb582959317b09fc69eacc.bindPopup(popup_3a2fa79df6ac85906fd5863c175aeaaa)
+        ;
+
+        
+    
+    
+            geo_json_3862858700eb582959317b09fc69eacc.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_c6a5d909206d3b35c913f52075973d5d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#46f0f0", "weight": 4};
+            }
+        }
+
+        function geo_json_c6a5d909206d3b35c913f52075973d5d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c6a5d909206d3b35c913f52075973d5d = L.geoJson(null, {
+                onEachFeature: geo_json_c6a5d909206d3b35c913f52075973d5d_onEachFeature,
+            
+                style: geo_json_c6a5d909206d3b35c913f52075973d5d_styler,
+            ...{
+}
+        });
+
+        function geo_json_c6a5d909206d3b35c913f52075973d5d_add (data) {
+            geo_json_c6a5d909206d3b35c913f52075973d5d
+                .addData(data);
+        }
+            geo_json_c6a5d909206d3b35c913f52075973d5d_add({"features": [{"geometry": {"coordinates": [[-3.9848965804347207, 55.8653612010301], [-3.9854869182433164, 55.86620947234607]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c6a5d909206d3b35c913f52075973d5d.bindTooltip(
+                `<div>
+                     Bell Street — Schedule X
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_d32ee75bdbddd8316e5d04615b3dd332 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc8815d6aca311d089cff9a2fc53fbff = $(`<div id="html_dc8815d6aca311d089cff9a2fc53fbff" style="width: 100.0%; height: 100.0%;"><b>Bell Street</b> (West)<br>Schedule X<br>SCHEDULE X NO WAITING NO LOADING 0800 to 1600 MONDAY TO SATURDAY<br><i>From the extended line of the north kerb of Alexander Street northwards to the extended line of the south kerb of Wesley Street a distance of 90 metres or thereby.</i></div>`)[0];
+                popup_d32ee75bdbddd8316e5d04615b3dd332.setContent(html_dc8815d6aca311d089cff9a2fc53fbff);
+            
+        
+
+        geo_json_c6a5d909206d3b35c913f52075973d5d.bindPopup(popup_d32ee75bdbddd8316e5d04615b3dd332)
+        ;
+
+        
+    
+    
+            geo_json_c6a5d909206d3b35c913f52075973d5d.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_5ce7d74f7a50b90c1fee1f4029fee932_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#f032e6", "weight": 4};
+            }
+        }
+
+        function geo_json_5ce7d74f7a50b90c1fee1f4029fee932_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5ce7d74f7a50b90c1fee1f4029fee932 = L.geoJson(null, {
+                onEachFeature: geo_json_5ce7d74f7a50b90c1fee1f4029fee932_onEachFeature,
+            
+                style: geo_json_5ce7d74f7a50b90c1fee1f4029fee932_styler,
+            ...{
+}
+        });
+
+        function geo_json_5ce7d74f7a50b90c1fee1f4029fee932_add (data) {
+            geo_json_5ce7d74f7a50b90c1fee1f4029fee932
+                .addData(data);
+        }
+            geo_json_5ce7d74f7a50b90c1fee1f4029fee932_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.979761918092578, 55.86609072744889]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_5ce7d74f7a50b90c1fee1f4029fee932.bindTooltip(
+                `<div>
+                     Graham Street — Schedule XII
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_5a3dae557cd8b6d18d6e588a31dad53d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a310aa66d3805045f10960c8dea9a8d = $(`<div id="html_7a310aa66d3805045f10960c8dea9a8d" style="width: 100.0%; height: 100.0%;"><b>Graham Street</b> (North)<br>Schedule XII<br>SCHEDULE XII NO WAITING NO LOADING AT ANY TIME<br><i>From the extended line of the east kerb of Bank Street eastwards for a distance of 65 metres or thereby.</i></div>`)[0];
+                popup_5a3dae557cd8b6d18d6e588a31dad53d.setContent(html_7a310aa66d3805045f10960c8dea9a8d);
+            
+        
+
+        geo_json_5ce7d74f7a50b90c1fee1f4029fee932.bindPopup(popup_5a3dae557cd8b6d18d6e588a31dad53d)
+        ;
+
+        
+    
+    
+            geo_json_5ce7d74f7a50b90c1fee1f4029fee932.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_0b058cfabe0fd240c410b401fe47a851_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#f032e6", "weight": 4};
+            }
+        }
+
+        function geo_json_0b058cfabe0fd240c410b401fe47a851_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_0b058cfabe0fd240c410b401fe47a851 = L.geoJson(null, {
+                onEachFeature: geo_json_0b058cfabe0fd240c410b401fe47a851_onEachFeature,
+            
+                style: geo_json_0b058cfabe0fd240c410b401fe47a851_styler,
+            ...{
+}
+        });
+
+        function geo_json_0b058cfabe0fd240c410b401fe47a851_add (data) {
+            geo_json_0b058cfabe0fd240c410b401fe47a851
+                .addData(data);
+        }
+            geo_json_0b058cfabe0fd240c410b401fe47a851_add({"features": [{"geometry": {"coordinates": [[-3.980795740103471, 55.866042443136266], [-3.980556428678594, 55.866049367209754]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_0b058cfabe0fd240c410b401fe47a851.bindTooltip(
+                `<div>
+                     Graham Street — Schedule XII
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_be54fb7e69051edd006c3cfe6726a3ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3bb9a2954dd86171bf5708868e45f51 = $(`<div id="html_b3bb9a2954dd86171bf5708868e45f51" style="width: 100.0%; height: 100.0%;"><b>Graham Street</b> (South)<br>Schedule XII<br>SCHEDULE XII NO WAITING NO LOADING AT ANY TIME<br><i>From the extended line of the east kerb of Broomknoll Street eastwards for a distance of 15 metres or thereby.</i></div>`)[0];
+                popup_be54fb7e69051edd006c3cfe6726a3ab.setContent(html_b3bb9a2954dd86171bf5708868e45f51);
+            
+        
+
+        geo_json_0b058cfabe0fd240c410b401fe47a851.bindPopup(popup_be54fb7e69051edd006c3cfe6726a3ab)
+        ;
+
+        
+    
+    
+            geo_json_0b058cfabe0fd240c410b401fe47a851.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_f8d109734c3e03004c76e2b5811a5a40_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#bfef45", "weight": 4};
+            }
+        }
+
+        function geo_json_f8d109734c3e03004c76e2b5811a5a40_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_f8d109734c3e03004c76e2b5811a5a40 = L.geoJson(null, {
+                onEachFeature: geo_json_f8d109734c3e03004c76e2b5811a5a40_onEachFeature,
+            
+                style: geo_json_f8d109734c3e03004c76e2b5811a5a40_styler,
+            ...{
+}
+        });
+
+        function geo_json_f8d109734c3e03004c76e2b5811a5a40_add (data) {
+            geo_json_f8d109734c3e03004c76e2b5811a5a40
+                .addData(data);
+        }
+            geo_json_f8d109734c3e03004c76e2b5811a5a40_add({"features": [{"geometry": {"coordinates": [[-3.9960087617601117, 55.86369633889692], [-3.9962964005957784, 55.864452861881375], [-3.9964343606837844, 55.86469212684967]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_f8d109734c3e03004c76e2b5811a5a40.bindTooltip(
+                `<div>
+                     Monkscourt Avenue — Schedule XVI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_f822df7e6bd48a312bd5c114445a342e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52e66edfd06c3c64da839e816a91377d = $(`<div id="html_52e66edfd06c3c64da839e816a91377d" style="width: 100.0%; height: 100.0%;"><b>Monkscourt Avenue</b> (West)<br>Schedule XVI<br>SCHEDULE XVI NO WAITING NO LOADING AT ANY TIME<br><i>From the extended line of the north kerb of A89 Alexander Street northwards for a distance of 114 metres or thereby.</i></div>`)[0];
+                popup_f822df7e6bd48a312bd5c114445a342e.setContent(html_52e66edfd06c3c64da839e816a91377d);
+            
+        
+
+        geo_json_f8d109734c3e03004c76e2b5811a5a40.bindPopup(popup_f822df7e6bd48a312bd5c114445a342e)
+        ;
+
+        
+    
+    
+            geo_json_f8d109734c3e03004c76e2b5811a5a40.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_1913b88843fb9c7527da23550a118c9d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#bfef45", "weight": 4};
+            }
+        }
+
+        function geo_json_1913b88843fb9c7527da23550a118c9d_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_1913b88843fb9c7527da23550a118c9d = L.geoJson(null, {
+                onEachFeature: geo_json_1913b88843fb9c7527da23550a118c9d_onEachFeature,
+            
+                style: geo_json_1913b88843fb9c7527da23550a118c9d_styler,
+            ...{
+}
+        });
+
+        function geo_json_1913b88843fb9c7527da23550a118c9d_add (data) {
+            geo_json_1913b88843fb9c7527da23550a118c9d
+                .addData(data);
+        }
+            geo_json_1913b88843fb9c7527da23550a118c9d_add({"features": [{"geometry": {"coordinates": [[-3.9960087617601117, 55.86369633889692], [-3.9962964005957784, 55.864452861881375], [-3.996717418215908, 55.865182955005984], [-3.99692717151737, 55.86554873226526], [-3.997105697775638, 55.865860285892744], [-3.997179155943894, 55.86598854558081]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_1913b88843fb9c7527da23550a118c9d.bindTooltip(
+                `<div>
+                     Monkscourt Avenue — Schedule XVI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_596656c7ee6e920e884266b9795d3a1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e17a0136dc66dc84bc1561540592655 = $(`<div id="html_2e17a0136dc66dc84bc1561540592655" style="width: 100.0%; height: 100.0%;"><b>Monkscourt Avenue</b> (East)<br>Schedule XVI<br>SCHEDULE XVI NO WAITING NO LOADING AT ANY TIME<br><i>From its junction with the A89 Alexander Street northwards for a distance of 265 metres or thereby.</i></div>`)[0];
+                popup_596656c7ee6e920e884266b9795d3a1e.setContent(html_2e17a0136dc66dc84bc1561540592655);
+            
+        
+
+        geo_json_1913b88843fb9c7527da23550a118c9d.bindPopup(popup_596656c7ee6e920e884266b9795d3a1e)
+        ;
+
+        
+    
+    
+            geo_json_1913b88843fb9c7527da23550a118c9d.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+    
+        function geo_json_eeef1c74064e55e216eba8f9b518b8a7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#bfef45", "weight": 4};
+            }
+        }
+
+        function geo_json_eeef1c74064e55e216eba8f9b518b8a7_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_eeef1c74064e55e216eba8f9b518b8a7 = L.geoJson(null, {
+                onEachFeature: geo_json_eeef1c74064e55e216eba8f9b518b8a7_onEachFeature,
+            
+                style: geo_json_eeef1c74064e55e216eba8f9b518b8a7_styler,
+            ...{
+}
+        });
+
+        function geo_json_eeef1c74064e55e216eba8f9b518b8a7_add (data) {
+            geo_json_eeef1c74064e55e216eba8f9b518b8a7
+                .addData(data);
+        }
+            geo_json_eeef1c74064e55e216eba8f9b518b8a7_add({"features": [{"geometry": {"coordinates": [[-3.997736881924405, 55.867296299517726], [-3.997606791644002, 55.86733073103969]], "type": "LineString"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_eeef1c74064e55e216eba8f9b518b8a7.bindTooltip(
+                `<div>
+                     Mavisbank Street — Schedule XVI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        var popup_b483a0b2ffba7b963ef7c96231283d7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d841b539ca355dbc98d4321d13ded7e = $(`<div id="html_0d841b539ca355dbc98d4321d13ded7e" style="width: 100.0%; height: 100.0%;"><b>Mavisbank Street</b> (Both)<br>Schedule XVI<br>SCHEDULE XVI NO WAITING NO LOADING AT ANY TIME<br><i>From the extended line of the east kerb of Manor Drive eastwards for a distance of 9 metres or thereby.</i></div>`)[0];
+                popup_b483a0b2ffba7b963ef7c96231283d7c.setContent(html_0d841b539ca355dbc98d4321d13ded7e);
+            
+        
+
+        geo_json_eeef1c74064e55e216eba8f9b518b8a7.bindPopup(popup_b483a0b2ffba7b963ef7c96231283d7c)
+        ;
+
+        
+    
+    
+            geo_json_eeef1c74064e55e216eba8f9b518b8a7.addTo(map_e4011b3668076503d6866b04c7092833);
+        
+</script>
+</html>
