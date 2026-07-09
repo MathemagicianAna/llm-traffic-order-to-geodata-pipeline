@@ -120,44 +120,6 @@ splits long streets into many short pieces. At each junction it picks whichever 
 best matches the compass bearing it is supposed to be heading in. Output is GeoJSON and an
 interactive map, colored by restriction schedule.
 
-## Some of the decisions behind this, and why
-
-I tested the parsing logic, the schedule sequence check, and the road network walking algorithm
-against small synthetic data before ever pointing them at a real PDF or making an API call.
-Every run against the actual document costs time and, for the vision model calls, money, so
-catching a logic bug in a two second local test beats catching it forty API calls into a real
-run.
-
-I chose OS Open Roads over OpenStreetMap for the road network, even though OSM is considerably
-less setup work (one function call versus downloading and clipping a national dataset in QGIS).
-OS Open Roads is the UK's official government dataset, and since this whole project is about
-turning a legal government document into structured data, using an authoritative road network
-felt like the right tradeoff for a pipeline meant to be a realistic prototype rather than a demo
-that only works on a happy path.
-
-The cleaning step repairs known malformed patterns instead of silently dropping them, but it
-does not guess at rows it cannot confidently parse. Unmatched streets and unparsed restriction
-text are reported, not hidden. A pipeline that quietly drops the rows it finds difficult will
-look better in a demo and be less trustworthy in practice.
-
-## What does not work yet
-
-The road network walking step is a heuristic, not a full linear referencing system. It follows
-whichever connected road segment best matches the compass direction it is given. That works well
-for the mostly straightforward streets in this dataset. A genuinely branching junction, where
-two forks continue in a similar direction, could pick the wrong one. Ordnance Survey's paid
-MasterMap Highways product solves this properly by grouping road segments into single named
-features with real linear referencing built in.
-
-The text parser handles the sentence patterns I found in North Lanarkshire's orders specifically.
-A different council's phrasing will need the parsing extended, and I would expect a batch of
-unparsed rows on the first run against any new document. That is by design: the pipeline is
-built to tell you what it could not handle rather than paper over it.
-
-There is no independent GIS layer of North Lanarkshire's own restrictions to check the geocoded
-output against, so validation here means spot checking segments against the source PDF by eye.
-That is an honest quality check, not a substitute for one.
-
 ## Getting sample data
 
 This repo does not include a PDF, since TROs are council specific and licensing varies, but real
